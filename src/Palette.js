@@ -1,17 +1,26 @@
 import React ,{Component} from 'react';
-
+import ColorBox from "./ColorBox";
+// import uuid from "uuid/v4";
+import "./Palette.css"
 
 class Palette extends Component{
-	constructor(props){
-		super(props);
-
-	}
 	render(){
-		return(
-			<div>
-				<h1> Palette </h1>
+		const colorBoxes = this.props.colors.map(color => (
+			<ColorBox 
+				background={color.color}  
+				name = {color.name}
+				
+			/>
+		));
+		return (
 
+			<div className='Palette'>
+				<div className='Palette-colors'>
+					{colorBoxes}
+
+				</div>
 			</div>
+			
 		);
 	}
 }
