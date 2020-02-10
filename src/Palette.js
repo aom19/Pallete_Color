@@ -6,6 +6,7 @@ import Navbar from "./Navbar"
 
 
 
+
 class Palette extends Component{
 	constructor(props){
 		super(props);
