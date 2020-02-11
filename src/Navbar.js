@@ -47,19 +47,20 @@ class Navbar extends Component{
 				</Link>
 					
 				</div>
-				
-				<div className="slider-container">
-				<span> Level : {level}</span>
-				<div className="slider">
-				<Slider 
-					defaultValue = {level}
-					min = {100}
-					max = {900}
-					step= {100}
-					onAfterChange={this.props.changeLevel}
-				/>
-				</div>
-				</div>
+				{this.props.showingAllColors && 
+					<div className="slider-container">
+					<span> Level : {level}</span>
+					<div className="slider">
+					<Slider 
+						defaultValue = {level}
+						 min = {100}
+						max = {900}
+						step= {100}
+						onAfterChange={this.props.changeLevel}
+					/>
+					</div>
+					</div>
+				}
 				<div className="select-container">
 				<Select 
 				 value = {this.state.format} 
