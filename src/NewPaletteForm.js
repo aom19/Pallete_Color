@@ -126,14 +126,16 @@ render() {
 				</IconButton>
 			</div>
 			<Divider />
+		<div className ={classes.container}>
 			<Typography variant ="h4" >
 				Design Your Palette
 			</Typography>
-			<div>
+			<div className ={classes.buttons} >
 				<Button 
 					onClick ={this.clearColors} 
 					variant = "contained" 
 					color ="secondary"
+					className ={classes.button}
 				>
 					Clear Palette
 				</Button>
@@ -142,6 +144,7 @@ render() {
 					variant = "contained" 
 					color ="primary"
 					disabled ={paletteIsFull}
+					className ={classes.button}
 				>
 					Random Color
 				</Button>
@@ -153,7 +156,7 @@ render() {
 				colors = {colors}
 
 			/> 
-			
+		</div>
 		</Drawer>
 		<main
 		 	className={classNames(classes.content, {

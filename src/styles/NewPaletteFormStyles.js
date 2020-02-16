@@ -14,6 +14,7 @@ const styles = theme => ({
     width: drawerWidth,
     display: "flex",
     alignItems: "center"
+
   },
   drawerHeader: {
     display: "flex",
@@ -25,7 +26,6 @@ const styles = theme => ({
   },
 
   content: {
-   
     flexGrow: 1,
     height:"calc(100vh - 64px)",
     padding: 0,
