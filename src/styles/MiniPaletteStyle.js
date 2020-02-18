@@ -2,7 +2,7 @@
 export default {
 	root : {
 		backgroundColor :"#dae1e4",
-		borderRadiu 	:"5px",
+		borderRadius 	:"5px",
 		padding 		:"0.5rem",
 		position		:"relative",
 		overflow 		:"hidden",
@@ -61,6 +61,11 @@ export default {
 		padding:"10px",
 		zIndex :"1",
 		opacity :"0",
-		transition :"all 0.4s ease-in-out"
+		transition :"all 0.4s ease-in-out",
+		"&:hover":{
+			color :"#93a6b0",
+			width:"22px",
+			height :"22px",
+		}
 	}
 }

@@ -1,4 +1,4 @@
-
+import sizes from "./sizes"
 
 export default {
 	root:{
@@ -26,14 +26,26 @@ export default {
 		justifyContent:"flex-end",
 		height:"45px",
 		alignItems:"center",
-		width :"35%"
+		width :"35%",
+		marginRight :"5px",
+		[sizes.down("xs")] :{
+			marginTop :"3%",
+			height:"50%",
+			marginRight :"2px"
+
+		}
 
 	},
 	button:{
-		margin:"0 0.4rem",
+		margin:"0 0.3rem",
 		textDecoration:"none",
 		width:"50%",
-		
-		fontSize :"1rem"
+		fontSize :"1rem",
+		padding :"0.3rem",
+		[sizes.down("xs")] :{
+			margin:0,
+
+
+		}
 	}
 }

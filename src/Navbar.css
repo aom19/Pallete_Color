@@ -7,25 +7,34 @@
 	/*background-opacity: 0.2;*/
 
 }
+#link {
+	text-decoration: none;
+}
+
 .logo{
-	margin-right: 15px;
+
+	margin-right: 20px;
 	padding: 0 13px;
-	font-size: 22px;
-	background: #eceff1;
-	font-family: Roboto;
+
+	color :black;
+	border-radius: 0px 2px 2px 0px;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	width: 65px;
-	background: linear-gradient(to right, #de6161, #2657eb);
+	background: linear-gradient(to right, #c4cacd, #7f8f90);
 }
-.logo a{
-	text-decoration: none;
-	color :black;
-	font-family: Roboto;
-	font-weight: 600;
+.logoText{
+		margin-left: -5px;
+		text-align: center;
+		color:#eb3d30;
+		font-family:Krona One;
+		font-size :1rem;
+		text-shadow: 2px 2px 4px #000000;
+}
+		
 
-}
+
 
 .slider{
 	width: 340px;

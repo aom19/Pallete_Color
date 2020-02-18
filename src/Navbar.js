@@ -8,7 +8,7 @@ import Slider from 'rc-slider';
 import CloseIcon from '@material-ui/icons/Close';
 import "./Navbar.css";
 import 'rc-slider/assets/index.css';
-
+import PaletteIcon from '@material-ui/icons/Palette';
 
 
 class Navbar extends Component{
@@ -42,8 +42,8 @@ class Navbar extends Component{
 		return(
 			<header id="Navbar"> 
 				<div className="logo">
-				<Link to="/">
-					Logo
+				<Link to="/"  id ="link">
+					<span className ="logoText"> Palette </span>
 				</Link>
 					
 				</div>
