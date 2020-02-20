@@ -5,12 +5,9 @@ import {withStyles } from "@material-ui/styles";
 import styles from "./styles/PaletteListStyle"
 import Particles from 'react-particles-js';
 import {CSSTransition,TransitionGroup} from 'react-transition-group';
-import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
+
 import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
+
 import DialogTitle from '@material-ui/core/DialogTitle';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -21,6 +18,8 @@ import CloseIcon from "@material-ui/icons/Close"
 import Avatar from '@material-ui/core/Avatar';
 import blue from "@material-ui/core/colors/blue"
 import red from "@material-ui/core/colors/red"
+
+
 const particlesOption ={
   particles: {
 	    number:{
@@ -41,6 +40,7 @@ class PaletteList extends Component{
 			openDeleteDialog :false,
 			deletingId:""
 		};
+		this.goToPalette = this.goToPalette.bind(this)
 	}
 	openDialog =(id)=>{
 			this.setState({
@@ -91,7 +91,7 @@ class PaletteList extends Component{
 								timeout={500}
 							> 
 								<MiniPalette {...palette} 
-									handleClick={() => this.goToPalette(palette.id)}
+									goToPalette={this.goToPalette}
 									// handleDelete = {this.props.deletePalette}
 									openDialog={this.openDialog}
 									key={palette.id}
@@ -118,13 +118,13 @@ class PaletteList extends Component{
 								</Avatar>
 							</ListItemAvatar>
 							<ListItemText
-								primary="Delete"
+								primary="Confirm"
 							/> 	
 						</ListItem>
 						<ListItem button onClick = {this.closeDialog}>
 							<ListItemAvatar>
 								<Avatar style ={{backgroundColor:red[100] , color :red[600] }}>
-									<CheckIcon />
+									<CloseIcon />
 								</Avatar>
 							</ListItemAvatar>
 							<ListItemText
