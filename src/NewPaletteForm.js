@@ -13,7 +13,9 @@ import DraggableColorList from "./DraggableColorList"
 import {arrayMove} from "react-sortable-hoc"
 import PaletteFormNav from "./PaletteFormNav"
  import seedColors from "./seedColors"
-class NewPaletteForm extends Component {
+
+
+ class NewPaletteForm extends Component {
   static defaultProps = {
 	maxColors: 20
   };
