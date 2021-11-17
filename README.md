@@ -1,14 +1,24 @@
+# Travel App
+Build with `React `
 
 
-## Available Scripts
+## Getting Started
+``` git clone https://github.com/aom19/Pallete_Color.git ```
 
-In the project directory, you can run:
 
-### `npm start`
+## Installation
+```
+cd Pallete_Color
+npm install 
+npm start
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Screen Shots
+![Screen Shot 2021-11-17 at 8 22 58 PM](https://user-images.githubusercontent.com/39848284/142260040-93c96ea6-dbe8-4291-82a3-030b9c056c66.png)
+
+
+## Acknowledgements
+This project stems from my desire to improve my knowledge through building applications.
+Knowing that this application could also help someone, that motivated me even more.
 
