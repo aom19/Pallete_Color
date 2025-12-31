@@ -11,7 +11,7 @@
     "@testing-library/user-event": "^7.2.1",
     "chroma-js": "^2.1.0",
     "emoji-mart": "^2.11.2",
-    "npm": "^6.13.7",
+    "npm": "^11.7.0",
     "particles.js": "^2.0.0",
     "rc-slider": "^9.2.1",
     "react": "^16.12.0",
